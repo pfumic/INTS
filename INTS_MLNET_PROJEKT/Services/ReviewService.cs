@@ -10,14 +10,15 @@ namespace INTS_MLNET_PROJEKT.Services
 {
     class ReviewService
     {
+        public List<Review> AllReviews { get; set; }
         public ReviewService() {
-
+            AllReviews = GetAllReviews();
         }
 
-        public List<Review> GetAllReviews() {
+        private List<Review> GetAllReviews() {
             bool headers = true;
             List<Review> allReviews = new List<Review>();
-            using (var reader = new StreamReader(@"C:\Users\Patrik Fumic\source\repos\INTS_MLNET_PROJEKT\INTS_MLNET_PROJEKT\Data\hotel_ratings_final.csv")) {
+            using (var reader = new StreamReader(@"C:\Users\Patrik Fumic\source\repos\INTS\INTS_MLNET_PROJEKT\Data\hotel_ratings_final.csv")) {
 
                 while (!reader.EndOfStream) {
                     var line = reader.ReadLine();
