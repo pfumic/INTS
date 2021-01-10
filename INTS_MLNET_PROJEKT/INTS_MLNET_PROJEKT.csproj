@@ -53,11 +53,23 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Hotel.cs" />
+    <Compile Include="FormaFiltriranje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormaFiltriranje.Designer.cs">
+      <DependentUpon>FormaFiltriranje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Review.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\HotelService.cs" />
     <Compile Include="Services\ReviewService.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormaFiltriranje.resx">
+      <DependentUpon>FormaFiltriranje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
